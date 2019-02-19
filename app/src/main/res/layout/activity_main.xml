@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/tegak"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cempakaweb.shoutuna.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="146dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="345dp"
+                android:layout_height="146dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/shoutuna_fm_logo" />
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="92dp"
+                android:background="@drawable/social_fb" />
+
+            <ImageView
+                android:id="@+id/ig"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-89dp"
+                android:layout_toEndOf="@+id/fb"
+                android:background="@drawable/social_ig" />
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/wa"
+                android:background="@drawable/social_twitter" />
+
+            <ImageView
+                android:id="@+id/wa"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/social_wa" />
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/timer"
+                android:textColor="#FFEBEE"
+                android:text="0:00"/>-->
+
+            <!--<com.gauravk.audiovisualizer.visualizer.BarVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/blast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:avColor="@color/av_dark_blue"
+                custom:avDensity="0.8"
+                custom:avSpeed="normal"
+                custom:avType="fill" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#90d3eef6">
+
+            <ImageView
+                android:id="@+id/btn_play_pause"
+                android:paddingTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:src="@drawable/ic_play_icons" />
+
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/btn_play_pause"
+                android:layout_toRightOf="@+id/btn_play_pause"
+                android:text="Shoutuna FM"
+                android:textColor="#ffff"
+                android:textColorHighlight="#949494"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/floating_menu" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
