@@ -6,13 +6,35 @@
     android:layout_height="match_parent"
     android:background="@drawable/tegak"
     tools:context=".AboutActivity">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp">
         <TextView
+            android:id="@+id/about_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About Shoutuna - FM" />
-    </LinearLayout>
+            android:text="@string/app_name"
+            android:fontFamily="@font/muli"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@color/sponsor_view"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:text="@string/about"
+                android:textAlignment="textStart" />
+        </RelativeLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

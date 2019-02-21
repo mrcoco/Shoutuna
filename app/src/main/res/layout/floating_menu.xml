@@ -15,9 +15,9 @@
     app:fab_addButtonPlusIconColor="@color/white"
     app:fab_labelStyle="@style/menu_labels_style"
     app:fab_expandDirection="up"
-    android:layout_marginBottom="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="10dp"
     tools:showIn="@layout/activity_main">
 
     <com.getbase.floatingactionbutton.FloatingActionButton
@@ -26,7 +26,15 @@
         android:layout_height="wrap_content"
         app:fab_icon="@drawable/info_6_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="About"
+        app:fab_title="About Shoutuna FM"
+        app:fab_colorPressed="@color/half_blue" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_icon="@drawable/info_6_48"
+        app:fab_addButtonColorNormal="#000"
+        app:fab_title="Program"
         app:fab_colorPressed="@color/half_blue" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
@@ -35,7 +43,7 @@
         android:layout_height="wrap_content"
         app:fab_icon="@drawable/radio_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="xxx?"
+        app:fab_title="Crew Shoutuna"
         app:fab_colorPressed="@color/half_blue" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
@@ -44,7 +52,7 @@
         android:layout_height="wrap_content"
         app:fab_icon="@drawable/ribbon_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="Sponsor"
+        app:fab_title="Advertorial"
         app:fab_colorPressed="@color/half_blue" />
 
 </com.getbase.floatingactionbutton.FloatingActionsMenu>

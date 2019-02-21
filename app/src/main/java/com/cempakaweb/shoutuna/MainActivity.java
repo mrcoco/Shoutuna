@@ -45,11 +45,18 @@ public class MainActivity extends AppCompatActivity implements RadioListener {
         aboutClick();
         sponsoreClick();
         personClick();
+        programClick();
     }
 
     public void aboutClick(){
         FloatingActionButton fab = findViewById(R.id.action_about);
         Intent intent = new Intent(MainActivity.this,AboutActivity.class);
+        buttonClick(fab,intent);
+    }
+
+    public void programClick(){
+        FloatingActionButton fab = findViewById(R.id.action_program);
+        Intent intent = new Intent(MainActivity.this,ProgramActivity.class);
         buttonClick(fab,intent);
     }
 

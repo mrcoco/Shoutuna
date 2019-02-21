@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Shoutuna - FM</string>
+    <string name="about">Radio Shoutuna 89.3 FM adalah merupakan salah satu bagian dari unit bisnis yang ada di Pondok Pesantren An Nawawi Berjan Purworejo Jawa Tengah.\nSmart , Care, Islamy menjadi tangline Radio Shoutuna FM, yaitu menjadi radio yang peduli memberikan pengetahuan, informasi dan hiburan serta peduli budaya local yang ada di Purworejo dan sekitarnya.
+Dalam siarannya dengan segmentasi all genre, Radio Shoutuna FM memutarkan lagu-lagu Top 40, Indie, Danggut, Koplo, Campursari dan Anak-anak. Radio Shoutuna FM juga memutarkan lagu-lagu asia diantaranya Unit Emirat Arab, Korea, Jepang, China dan India.\n
+Alamat Radio Shoutua FM :\n
+Jl. Ir. H. Juanda Berjan Gebang Purworejo 54191\n
+Telp. (0275) 3128375\n
+SMS/WA Online : 085 218 893 893\n
+Email : shoutunafm@gmail.com</string>
+    <string name="title_activity_program">ProgramActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

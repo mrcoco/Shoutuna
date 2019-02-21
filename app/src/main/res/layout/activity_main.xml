@@ -8,7 +8,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cempakaweb.shoutuna.MainActivity">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/floating_menu" />
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/linear1"
@@ -16,7 +20,6 @@
         android:layout_height="160dp"
         android:gravity="center"
         android:orientation="vertical">
-
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
@@ -118,12 +121,6 @@
                 android:text="Shoutuna FM"
                 android:textColor="#ffff"
                 android:textColorHighlight="#949494"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <include layout="@layout/floating_menu" />
         </RelativeLayout>
 
     </LinearLayout>
