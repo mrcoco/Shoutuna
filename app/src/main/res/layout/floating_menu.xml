@@ -1,58 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.getbase.floatingactionbutton.FloatingActionsMenu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.getbase.floatingactionbutton.FloatingActionsMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/multiple_actions_menu"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="bottom|end"
     android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true"
-    app:layout_anchorGravity="center_vertical|right"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="bottom|end"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
     app:fab_addButtonColorNormal="#4ca4c7"
     app:fab_addButtonColorPressed="@color/half_blue"
     app:fab_addButtonPlusIconColor="@color/white"
-    app:fab_labelStyle="@style/menu_labels_style"
     app:fab_expandDirection="up"
-    android:layout_marginBottom="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginEnd="10dp"
+    app:fab_labelStyle="@style/menu_labels_style"
+    app:layout_anchorGravity="center_vertical|right"
     tools:showIn="@layout/activity_main">
 
     <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/action_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fab_icon="@drawable/info_6_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="About Shoutuna FM"
-        app:fab_colorPressed="@color/half_blue" />
+        app:fab_colorPressed="@color/half_blue"
+        app:fab_icon="@drawable/info_6_48"
+        app:fab_size="mini"
+        app:fab_title="About Shoutuna FM" />
+
     <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/action_program"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fab_icon="@drawable/info_6_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="Program"
-        app:fab_colorPressed="@color/half_blue" />
+        app:fab_colorPressed="@color/half_blue"
+        app:fab_icon="@drawable/info_6_48"
+        app:fab_size="mini"
+        app:fab_title="Program" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/action_person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fab_icon="@drawable/radio_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="Crew Shoutuna"
-        app:fab_colorPressed="@color/half_blue" />
+        app:fab_colorPressed="@color/half_blue"
+        app:fab_icon="@drawable/radio_48"
+        app:fab_size="mini"
+        app:fab_title="Crew Shoutuna" />
 
     <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/action_sponsor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fab_icon="@drawable/ribbon_48"
         app:fab_addButtonColorNormal="#000"
-        app:fab_title="Advertorial"
-        app:fab_colorPressed="@color/half_blue" />
+        app:fab_colorPressed="@color/half_blue"
+        app:fab_icon="@drawable/ribbon_48"
+        app:fab_size="mini"
+        app:fab_title="Advertorial" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_podcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="#000"
+        app:fab_colorPressed="@color/half_blue"
+        app:fab_icon="@drawable/ribbon_48"
+        app:fab_size="mini"
+        app:fab_title="Podcast" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="#000"
+        app:fab_colorPressed="@color/half_blue"
+        app:fab_icon="@drawable/ribbon_48"
+        app:fab_size="mini"
+        app:fab_title="Podcast" />
 
 </com.getbase.floatingactionbutton.FloatingActionsMenu>
