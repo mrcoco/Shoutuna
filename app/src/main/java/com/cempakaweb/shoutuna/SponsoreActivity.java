@@ -36,7 +36,7 @@ public class SponsoreActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<SponsorResponse> call, Response<SponsorResponse> response) {
                 final List<SponsorModels> sponsorModelsList = response.body().getResult();
-                
+
                 //Log.w("response", new Gson().toJson(response.body().getResult()));
 
 
