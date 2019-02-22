@@ -35,9 +35,9 @@ public class SponsoreActivity extends AppCompatActivity {
         call.enqueue(new Callback<SponsorResponse>() {
             @Override
             public void onResponse(Call<SponsorResponse> call, Response<SponsorResponse> response) {
-                //final List<SponsorModels> sponsorModelsList = response.body().getResult();
-                Log.w("response", new Gson().toJson(response.body().getResult()));
-                //Log.d("response-array", new Gson().toJson(sponsorModelsList));
+                final List<SponsorModels> sponsorModelsList = response.body().getResult();
+                
+                //Log.w("response", new Gson().toJson(response.body().getResult()));
 
 
             }
